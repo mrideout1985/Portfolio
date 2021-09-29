@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "generate-icons": "npx @svgr/cli -d components/icons --ignore-existing public --ext=js"
+
   },
   "dependencies": {
     "next": "11.1.2",
@@ -15,6 +17,7 @@
     "sass": "^1.42.1"
   },
   "devDependencies": {
+    "@svgr/cli": "^5.5.0",
     "eslint": "7.32.0",
     "eslint-config-next": "11.1.2"
   }
