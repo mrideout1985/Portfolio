@@ -3,7 +3,7 @@ import styles from "../styles/Projects.module.scss"
 
 const Projects = () => {
 	return (
-		<section>
+		<section className={styles.container}>
 			Projects
 		</section>
 	)
