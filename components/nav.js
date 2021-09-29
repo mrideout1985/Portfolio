@@ -1,8 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import styles from "./nav.module.scss"
+import { useRouter } from "next/router";
+
 
 const Nav = () => {
+
+	const router = useRouter();
+
 	return (
 		<header className={styles.header}>
 			<nav className={styles.nav}>
@@ -12,8 +17,14 @@ const Nav = () => {
 					</Link>
 				</div>
 				<div className={styles.links}>
-					<Link href="/" ><a>Home</a></Link>
-					<Link href="/projects"><a>Projects</a></Link>
+					<Link href="/"  ><a className={[
+						[styles["default"]],
+						[router.pathname === "/" ? styles["active"] : ""],
+					].join(" ")}>Home</a></Link>
+					<Link href="/projects" ><a className={[
+						[styles["default"]],
+						[router.pathname === "/projects" ? styles["active"] : ""],
+					].join(" ")}>Projects</a></Link>
 				</div>
 			</nav>
 		</header>
