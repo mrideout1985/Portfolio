@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import man from "../public/man.jpg"
+import me2 from "../public/me2.jpg"
 import { Css3, Cypress, Html5, Javascript, Jest, Nextdotjs, React, Sass, Typescript, Vite } from '../components/icons/index'
 import styles from '../styles/Home.module.scss'
 
@@ -10,9 +10,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <section className={styles.heroContainer}><h1>Hello, my name is Matt. I am a Designer / Front End Developer living in Bridgend, Wales.</h1></section>
+      <section className={styles.heroContainer}><h1>Hello, my name is Matt. I am a Front End Developer living in Bridgend, Wales.</h1></section>
       <section className={styles.imageContainer}>
-        <Image height={400} width={900} className={styles.image} src={man} alt="image of matt" />
+        <Image height={400} width={900} className={styles.image} src={me2} alt="image of matt" />
       </section>
       <section className={styles.aboutContainer}>
         <h3>About</h3>

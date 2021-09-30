@@ -1,0 +1,48 @@
+.list {
+	width: 100%;
+	list-style: none;
+	.container {
+		padding: 1rem 2rem;
+
+		.background {
+			height: 30rem;
+			position: relative;
+			background-position: center;
+			background-size: cover;
+			width: 100%;
+
+			&:hover {
+				.link {
+					opacity: 1;
+
+					a {
+						transform: translateY(0);
+						display: block;
+					}
+				}
+			}
+
+			.link {
+				width: 100%;
+				background-color: rgba(0, 0, 0, 0.76);
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				opacity: 0;
+				transition: all 0.25s ease-in-out;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				a {
+					color: white;
+					transform: translateY(6rem);
+					transition: all 0.5s ease;
+					font-family: Montseratt, sans-serif;
+					font-size: 1.5rem;
+				}
+			}
+		}
+	}
+}
