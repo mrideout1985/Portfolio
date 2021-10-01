@@ -6,16 +6,13 @@
 	.container {
 		margin: 5rem 10rem;
 		padding: 1rem;
-		border: 1px solid black;
 		@include respond(phone) {
 			font-size: 0.8rem;
 		}
 
 		.background {
 			position: relative;
-			background-position: auto;
-			background-size: cover;
-			height: 20rem;
+			height: 30rem;
 			width: 100%;
 
 			@include respond(phone) {
