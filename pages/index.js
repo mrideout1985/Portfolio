@@ -3,6 +3,7 @@ import Image from 'next/image'
 import me2 from "../public/me2.jpg"
 import { Css3, Cypress, Html5, Javascript, Jest, Nextdotjs, React, Sass, Typescript, Vite } from '../components/icons/index'
 import styles from '../styles/Home.module.scss'
+import Meta from '../components/meta/meta'
 
 export default function Home() {
 
@@ -10,6 +11,9 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
+      <Meta title="About">
+        <meta name="description" content="Created by Matt Rideout" />
+      </Meta>
       <section className={styles.heroContainer}><h1>Hello, my name is Matt. I am a Front End Developer living in Bridgend, Wales.</h1></section>
       <section className={styles.imageContainer}>
         <Image height={400} width={900} className={styles.image} src={me2} alt="image of matt" />

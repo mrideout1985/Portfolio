@@ -1,4 +1,5 @@
 import React from 'react'
+import Meta from '../components/meta/meta'
 import ProjectCard from '../components/projectCard/projectCard'
 import styles from "../styles/Projects.module.scss"
 
@@ -14,6 +15,9 @@ const Projects = () => {
 
 	return (
 		<section className={styles.container}>
+			<Meta title="Projects">
+				<meta name="projects page" content="Created by Matt Rideout" />
+			</Meta>
 			{projectList.map((project, i) => (
 				<ProjectCard key={i} title={project.title} background={project.background} type={project.type} linkToProject={project.linkToProject} />
 			))}
