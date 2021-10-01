@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from "next/link"
+import ArrowRight from "../icons/ArrowRight"
 import styles from "./projectCard.module.scss"
 
 const ProjectCard = ({ title, type, background, linkToProject, page }) => {
@@ -11,7 +12,7 @@ const ProjectCard = ({ title, type, background, linkToProject, page }) => {
 			<div className={styles.container}>
 				<div className={styles.background} style={{ background: `url(${background}` }}>
 					<div className={styles.link}>
-						<a href={linkToProject}>Visit Project</a>
+						<a href={linkToProject}>Visit Project </a>
 					</div>
 				</div>
 				<h4>{title}</h4>
@@ -22,3 +23,4 @@ const ProjectCard = ({ title, type, background, linkToProject, page }) => {
 }
 
 export default ProjectCard
+

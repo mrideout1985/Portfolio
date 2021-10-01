@@ -1,3 +1,4 @@
+export { default as ArrowRight } from './ArrowRight'
 export { default as Css3 } from './Css3'
 export { default as Cypress } from './Cypress'
 export { default as Github } from './Github'

@@ -2,12 +2,12 @@
 	width: 100%;
 	list-style: none;
 	.container {
-		padding: 1rem 2rem;
+		margin: 5rem 10rem;
 
 		.background {
 			height: 30rem;
 			position: relative;
-			background-position: center;
+			background-position: auto;
 			background-size: cover;
 			width: 100%;
 
@@ -17,7 +17,10 @@
 
 					a {
 						transform: translateY(0);
-						display: block;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						opacity: 1;
 					}
 				}
 			}
@@ -37,9 +40,16 @@
 
 				a {
 					color: white;
+					border: 1px solid #ffc457cc;
+					padding: 1rem 2rem;
 					transform: translateY(6rem);
+					display: flex;
+					opacity: 0;
+					justify-content: center;
+					align-items: center;
 					transition: all 0.5s ease;
 					font-family: Montseratt, sans-serif;
+					font-style: italic;
 					font-size: 1.5rem;
 				}
 			}
