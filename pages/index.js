@@ -26,7 +26,7 @@ export default function Home() {
           and understanding of HTML, CSS(SASS) and JavaScript and possess a good understanding of libraries
           such as React. I have experience writing unit tests for React using Jest and Enzyme,
           and I have some experience with Cypress for end-to-end testing. I have some knowledge of
-          the foundations of web accessibility,  WCAG 2.1. and am starting to impliment WAI-ARIA design
+          the foundations of web accessibility,  WCAG 2.1. and am starting to implement WAI-ARIA design
           patters inside my React components.</p>
         <p> In and outside of work I have strong driving motivation to improve my skill sets
           and keep up to date with the latest technologies, always looking for ways in which
