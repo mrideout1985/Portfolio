@@ -1,5 +1,5 @@
 import React from 'react'
-import Link from "next/link"
+import Image from "next/Image"
 import ArrowRight from "../icons/ArrowRight"
 import styles from "./projectCard.module.scss"
 
@@ -10,7 +10,8 @@ const ProjectCard = ({ title, type, background, linkToProject, page }) => {
 	return (
 		<li className={styles.list}>
 			<div className={styles.container}>
-				<div className={styles.background} style={{ background: `url(${background}` }}>
+				<div className={styles.background}>
+					<Image src={background} alt="background" layout="fill" />
 					<div className={styles.link}>
 						<a href={linkToProject}>Visit Project </a>
 					</div>

@@ -1,15 +1,30 @@
+@import "../../sass/abstracts/mixins";
+
 .list {
 	width: 100%;
 	list-style: none;
 	.container {
 		margin: 5rem 10rem;
+		padding: 1rem;
+		border: 1px solid black;
+		@include respond(phone) {
+			font-size: 0.8rem;
+		}
 
 		.background {
-			height: 30rem;
 			position: relative;
 			background-position: auto;
 			background-size: cover;
+			height: 20rem;
 			width: 100%;
+
+			@include respond(phone) {
+				height: 3rem;
+			}
+
+			@include respond(tab-port) {
+				height: 15rem;
+			}
 
 			&:hover {
 				.link {
@@ -40,7 +55,7 @@
 
 				a {
 					color: white;
-					border: 1px solid #ffc457cc;
+					border: 1px solid royalblue;
 					padding: 1rem 2rem;
 					transform: translateY(6rem);
 					display: flex;
@@ -51,6 +66,16 @@
 					font-family: Montseratt, sans-serif;
 					font-style: italic;
 					font-size: 1.5rem;
+
+					@include respond(phone) {
+						padding: 0.25rem;
+						font-size: 1rem;
+					}
+
+					@include respond(tab-port) {
+						padding: 0.5 1rem;
+						font-size: 1rem;
+					}
 				}
 			}
 		}
