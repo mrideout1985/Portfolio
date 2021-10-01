@@ -19,8 +19,8 @@ export default function Home() {
         <p>I am a highly focused and driven individual that has just over two years experience in
           front-end development. I am a self-motivated, organised and committed individual, with the
           ability to work well independently or as part of a professional development team. I have a firm knowledge
-          and understanding of HTML, CSS(SASS) and JavaScript and possess a good understanding of frameworks
-          such as REACT.  I have experience writing unit tests for React using Jest and Enzyme,
+          and understanding of HTML, CSS(SASS) and JavaScript and possess a good understanding of libraries
+          such as React. I have experience writing unit tests for React using Jest and Enzyme,
           and I have some experience with Cypress for end-to-end testing. I have some knowledge of
           the foundations of web accessibility,  WCAG 2.1. and am starting to impliment WAI-ARIA design
           patters inside my React components.</p>
