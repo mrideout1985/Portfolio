@@ -1,6 +1,4 @@
 import React from 'react'
-import Image from "next/Image"
-import ArrowRight from "../icons/ArrowRight"
 import styles from "./projectCard.module.scss"
 
 const ProjectCard = ({ title, type, background, linkToProject, page }) => {
