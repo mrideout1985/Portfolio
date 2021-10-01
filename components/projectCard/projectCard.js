@@ -10,7 +10,7 @@ const ProjectCard = ({ title, type, background, linkToProject, page }) => {
 	return (
 		<li className={styles.list}>
 			<div className={styles.container}>
-				<div className={styles.background} style={{ background: `url(${background}`, backgroundSize: "cover" }}>
+				<div className={styles.background} style={{ background: `url(${background}`, backgroundSize: "cover", backgroundPosition: "center" }}>
 					<div className={styles.link}>
 						<a href={linkToProject}>Visit Project</a>
 					</div>
