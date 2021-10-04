@@ -8,12 +8,12 @@
     "start": "next start",
     "lint": "next lint",
     "generate-icons": "npx @svgr/cli -d components/icons --ignore-existing public --ext=js"
-
   },
   "dependencies": {
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-use": "^17.3.1",
     "sass": "^1.42.1"
   },
   "devDependencies": {
