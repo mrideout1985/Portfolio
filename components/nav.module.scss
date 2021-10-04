@@ -1,3 +1,5 @@
+@import "../sass/abstracts/mixins";
+
 .header {
 	width: 100%;
 	background-color: var(--main-bg-color);
@@ -9,7 +11,12 @@
 		justify-content: space-between;
 		align-items: center;
 		padding: 1rem;
-
+		@include respond(phone) {
+			flex-direction: column;
+			.logo {
+				margin-bottom: 2rem;
+			}
+		}
 		.logo {
 			display: flex;
 			position: relative;
