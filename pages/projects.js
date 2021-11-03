@@ -9,7 +9,7 @@ const Projects = () => {
 
 	const projectList = [
 		{ title: "RMDb Movie Database", type: "Personal", background: "/rmdb.png", linkToProject: "https://youthful-dijkstra-81cc66.netlify.app/", page: "/rmdb" },
-		{ title: "South West Wales Amalgamated", type: "Freelance, work in progress", background: "/swwamal.png", linkToProject: "https://gifted-poitras-b1308d.netlify.app/", page: "/swwamal" },
+		{ title: "South West Wales Amalgamated", type: "Freelance, work in progress", background: "/swwamal.png", linkToProject: "https://south-west-wales-amalgamated-6bizh9v29-mrideout1985.vercel.app/", page: "/swwamal" },
 		{ title: "To Do List", type: "Personal", background: "/todo.jpg", linkToProject: "https://epic-mahavira-32a793.netlify.app/", page: "/todo" },
 	]
 
