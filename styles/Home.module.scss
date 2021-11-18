@@ -1,60 +1,64 @@
 .container {
-	min-height: 100vh;
-	padding: 0 0.5rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: flex-start;
-	align-items: center;
+    min-height: 100vh;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: var(--background);
 
-	.heroContainer {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
-		padding: 60px 40px;
+    .heroContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        padding: 60px 40px;
 
-		h1 {
-			text-align: justify;
-		}
-	}
+        h1 {
+            text-align: justify;
+            color: var(--text-primary);
+        }
+    }
 
-	.imageContainer {
-		margin: 0 auto;
+    .imageContainer {
+        margin: 0 auto;
 
-		.image {
-			object-fit: cover;
-		}
-	}
+        .image {
+            object-fit: cover;
+        }
+    }
 
-	.aboutContainer {
-		display: flex;
-		justify-content: flex-start;
-		flex-direction: column;
-		align-items: flex-start;
-		margin: 0 auto;
-		padding: 60px 40px;
+    .aboutContainer {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 0 auto;
+        padding: 60px 40px;
 
-		h3 {
-		}
+        h3 {
+            color: var(--text-primary);
+        }
 
-		p {
-			line-height: 1.7rem;
-			font-family: Montseratt, sans-serif;
-		}
-		h4 {
-		}
+        p {
+            line-height: 1.7rem;
+            font-family: Montseratt, sans-serif;
+            color: var(--text-secondary);
+        }
+        h4 {
+        }
 
-		.skills {
-			width: 100%;
-			display: flex;
-			justify-content: flex-start;
-			align-items: center;
-			flex-wrap: wrap;
+        .skills {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
 
-			svg {
-				height: 3rem;
-				margin: 0.4rem 0.4rem 0 0;
-			}
-		}
-	}
+            svg {
+                height: 3rem;
+                margin: 0.4rem 0.4rem 0 0;
+            }
+        }
+    }
 }

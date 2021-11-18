@@ -13,8 +13,11 @@
     "next": "11.1.2",
     "react": "17.0.2",
     "react-dom": "17.0.2",
+    "react-responsive": "^9.0.0-beta.4",
+    "react-toggle": "^4.1.2",
     "react-use": "^17.3.1",
-    "sass": "^1.42.1"
+    "sass": "^1.42.1",
+    "use-local-storage": "^2.2.5"
   },
   "devDependencies": {
     "@svgr/cli": "^5.5.0",
