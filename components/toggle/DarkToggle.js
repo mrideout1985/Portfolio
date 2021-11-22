@@ -8,7 +8,7 @@ export const DarkToggle = ({ isDark, onChange }) => {
   return (
     <Toggle
       className={styles.toggle}
-      icons={{ checked: <Moon />, unchecked: <Sun /> }}
+      icons={{ checked: <Sun />, unchecked: <Moon /> }}
       aria-label="Dark mode"
       checked={isDark}
       onChange={onChange}
