@@ -8,17 +8,17 @@ import { useMediaQuery } from "react-responsive";
 const Nav = () => {
   const router = useRouter();
   const DARK_CLASS = "dark";
-  const systemPrefersDark = useMediaQuery(
-    {
-      query: "(prefers-color-scheme: dark)",
-    },
-    undefined,
-    (prefersDark) => {
-      setIsDark(prefersDark);
-    }
-  );
+  // const systemPrefersDark = useMediaQuery(
+  //   {
+  //     query: "(prefers-color-scheme: dark)",
+  //   },
+  //   undefined,
+  //   (prefersDark) => {
+  //     setIsDark(prefersDark);
+  //   }
+  // );
 
-  const [isDark, setIsDark] = useState(systemPrefersDark);
+  const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
     if (isDark) {
@@ -58,10 +58,7 @@ const Nav = () => {
             </a>
           </Link>
         </div>
-        <DarkToggle
-          isDark={isDark}
-          onChange={(e) => setIsDark(e.target.checked)}
-        />
+        <DarkToggle isDark={isDark} onChange={(e) => setIsDark(!isDark)} />
       </nav>
     </header>
   );
