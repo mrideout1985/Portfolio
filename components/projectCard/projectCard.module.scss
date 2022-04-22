@@ -1,96 +1,105 @@
 @import "../../sass/abstracts/mixins";
 
 .list {
-    width: 100%;
-    list-style: none;
-    .container {
-        margin: 5rem 10rem;
-        padding: 1rem;
+  width: 100%;
+  list-style: none;
+  .container {
+    margin: 5rem 10rem;
+    padding: 1rem;
 
-        h4 {
-            color: var(--text-primary);
-            font-size: 1.5rem;
-        }
-
-        h5 {
-            font-size: 1rem;
-            color: var(--text-primary);
-        }
-
-        @include respond(phone) {
-            font-size: 0.8rem;
-            margin: 0;
-        }
-        @include respond(tab-port) {
-            margin: 1rem 2rem;
-        }
-
-        .background {
-            position: relative;
-            height: 30rem;
-            width: 100%;
-            border-radius: 15px;
-
-            @include respond(phone) {
-                height: 3rem;
-            }
-
-            @include respond(tab-port) {
-                height: 15rem;
-            }
-
-            &:hover {
-                .link {
-                    opacity: 1;
-
-                    a {
-                        transform: translateY(0);
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .link {
-                width: 100%;
-                background-color: rgba(0, 0, 0, 0.76);
-                height: 100%;
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                transition: all 0.25s ease-in-out;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-
-                a {
-                    color: white;
-                    border: 1px solid var(--accent);
-                    padding: 1rem 2rem;
-                    transform: translateY(6rem);
-                    display: flex;
-                    opacity: 0;
-                    justify-content: center;
-                    align-items: center;
-                    transition: all 0.5s ease;
-                    font-family: Montseratt, sans-serif;
-                    font-style: italic;
-                    font-size: 1.5rem;
-
-                    @include respond(phone) {
-                        padding: 0.25rem;
-                        font-size: 1rem;
-                    }
-
-                    @include respond(tab-port) {
-                        padding: 0.5 1rem;
-                        font-size: 1rem;
-                    }
-                }
-            }
-        }
+    h4 {
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      margin: 1rem 0 0.5rem 0;
     }
+
+    h5 {
+      font-size: 1rem;
+      margin: 0;
+      color: var(--text-primary);
+    }
+
+    .description {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: var(--text-primary);
+    }
+
+    @include respond(phone) {
+      font-size: 0.8rem;
+      margin: 0;
+    }
+    @include respond(tab-port) {
+      margin: 1rem 2rem;
+    }
+
+    .background {
+      position: relative;
+      height: 30rem;
+      width: 100%;
+      border-radius: 15px;
+
+      @include respond(phone) {
+        height: 3rem;
+      }
+
+      @include respond(tab-port) {
+        height: 15rem;
+      }
+
+      &:hover {
+        .link {
+          opacity: 1;
+
+          a {
+            transform: translateY(0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 1;
+          }
+        }
+      }
+
+      .link {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.76);
+        border-radius: 15px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: all 0.25s ease-in-out;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        a {
+          color: white;
+          border: 1px solid var(--accent);
+          padding: 1rem 2rem;
+          transform: translateY(6rem);
+          display: flex;
+          opacity: 0;
+          justify-content: center;
+          align-items: center;
+          transition: all 0.5s ease;
+          font-family: Montseratt, sans-serif;
+          font-style: italic;
+          font-size: 1.5rem;
+
+          @include respond(phone) {
+            padding: 0.25rem;
+            font-size: 1rem;
+          }
+
+          @include respond(tab-port) {
+            padding: 0.5 1rem;
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
