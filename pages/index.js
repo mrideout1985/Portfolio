@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 import me2 from "../public/me2.jpg";
 import {
@@ -11,7 +10,6 @@ import {
   React,
   Sass,
   Typescript,
-  Vite,
 } from "../components/icons/index";
 import styles from "../styles/Home.module.scss";
 import Meta from "../components/meta/meta";

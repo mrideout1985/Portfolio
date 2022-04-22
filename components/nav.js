@@ -21,10 +21,9 @@ const getLocalStorage = (key, initialValue) => {
 };
 
 const Nav = () => {
+  const [isDark, setIsDark] = useState(getLocalStorage("isDark", false));
   const router = useRouter();
   const DARK_CLASS = "dark";
-
-  const [isDark, setIsDark] = useState(getLocalStorage("isDark", false));
 
   useEffect(() => {
     if (isDark) {

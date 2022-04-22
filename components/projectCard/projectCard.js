@@ -15,8 +15,6 @@ const ProjectCard = ({
           className={styles.background}
           style={{
             backgroundImage: `url(${background}`,
-            backgroundSize: "cover",
-            backgroundPosition: "top",
           }}
         >
           <div className={styles.link}>

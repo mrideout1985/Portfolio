@@ -38,6 +38,7 @@
       height: 30rem;
       width: 100%;
       border-radius: 15px;
+      background-size: cover;
 
       @include respond(phone) {
         height: 3rem;
