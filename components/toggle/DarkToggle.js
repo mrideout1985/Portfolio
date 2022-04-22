@@ -4,13 +4,12 @@ import styles from "./darktoggle.module.scss";
 import "react-toggle/style.css";
 import { Moon, Sun } from "../icons";
 
-export const DarkToggle = ({ isDark, onChange }) => {
+export const DarkToggle = ({ onChange }) => {
   return (
     <Toggle
       className={styles.toggle}
       icons={{ checked: <Sun />, unchecked: <Moon /> }}
       aria-label="Dark mode"
-      checked={isDark}
       onChange={onChange}
     />
   );
