@@ -8,6 +8,15 @@
     padding: 0;
     margin: 0;
 
+    &:first-child {
+      background-color: transparent;
+
+      > svg {
+        fill: bright-yellow;
+        transition: all 0.3s ease-in-out;
+      }
+    }
+
     div {
       margin: 0;
       padding-right: 1rem;

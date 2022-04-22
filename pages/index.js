@@ -43,25 +43,22 @@ export default function Home() {
           I am a highly focused and driven individual that has just over two
           years experience in front-end development. I am a self-motivated,
           organised and committed individual, with the ability to work well
-          independently or as part of a professional development team. I have a
-          firm knowledge and understanding of HTML, CSS(SASS) and JavaScript and
-          possess a good understanding of libraries such as React. I have
-          experience writing unit tests for React using Jest and Enzyme, and I
-          have some experience with Cypress for end-to-end testing. I have some
-          knowledge of the foundations of web accessibility, WCAG 2.1. and am
-          starting to implement WAI-ARIA design patterns inside my React
-          components.
+          independently or as part of a team. I have a good knowledge and
+          understanding of HTML, CSS(SASS) and JavaScript/Typescript and possess
+          a good understanding libraries such as React. I have experience
+          writing unit tests for React using Jest and I have some experience
+          with Cypress for end-to-end testing. As you can see from my projects,
+          I have experience with git / version control. I have some knowledge of
+          the foundations of web accessibility and will be looking to improve my
+          skills in this area.
         </p>
         <p>
-          {" "}
-          In and outside of work I have strong driving motivation to improve my
-          skill sets and keep up to date with the latest technologies, always
-          looking for ways in which I can expand my technical knowledge. I have
-          done some Freelance work, but am currently looking for a role that
-          will allow me to work alongside an expert team of developers, thereby
-          helping me to progress my career to more senior roles in the future.
-          My current knowledge and education surrounding web development has
-          been whilst maintaining my current job in an unrelated industry.
+          In and outside of work I have strong motivation to improve my skill
+          sets and keep up to date with the latest technologies, always looking
+          for ways in which I can expand my technical knowledge. I am looking to
+          join a team of developers that will help me to grow as a developer.
+          Everything I have learned so far has been self taught with some
+          mentoring from friends who work in the industry.
         </p>
         <h3>Skills</h3>
         <div className={styles.skills}>
@@ -74,7 +71,6 @@ export default function Home() {
           <Nextdotjs />
           <Cypress />
           <Jest />
-          <Vite />
         </div>
       </section>
     </div>
