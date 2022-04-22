@@ -3,28 +3,36 @@ import Link from "next/link";
 import styles from "./nav.module.scss";
 import { useRouter } from "next/router";
 import { DarkToggle } from "../components/toggle/DarkToggle";
-import { useMediaQuery } from "react-responsive";
+
+const setLocalStorage = (key, value) => {
+  try {
+    window.localStorage.setItem(key, JSON.stringify(value));
+  } catch (e) {
+    console.log(e);
+  }
+};
+const getLocalStorage = (key, initialValue) => {
+  try {
+    const value = window.localStorage.getItem(key);
+    return value ? JSON.parse(value) : initialValue;
+  } catch (e) {
+    return initialValue;
+  }
+};
 
 const Nav = () => {
   const router = useRouter();
   const DARK_CLASS = "dark";
-  // const systemPrefersDark = useMediaQuery(
-  //   {
-  //     query: "(prefers-color-scheme: dark)",
-  //   },
-  //   undefined,
-  //   (prefersDark) => {
-  //     setIsDark(prefersDark);
-  //   }
-  // );
 
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(getLocalStorage("isDark", false));
 
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add(DARK_CLASS);
+      setLocalStorage("isDark", true);
     } else {
       document.documentElement.classList.remove(DARK_CLASS);
+      setLocalStorage("isDark", false);
     }
   }, [isDark]);
 
@@ -58,7 +66,7 @@ const Nav = () => {
             </a>
           </Link>
         </div>
-        <DarkToggle isDark={isDark} onChange={(e) => setIsDark(!isDark)} />
+        <DarkToggle isDark={isDark} onChange={() => setIsDark(!isDark)} />
       </nav>
     </header>
   );
