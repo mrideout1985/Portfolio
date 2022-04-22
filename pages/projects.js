@@ -10,7 +10,7 @@ const Projects = () => {
       type: "Personal Project / Learning",
       background: "/notes.png",
       description:
-        "A full stack note taking app. Backend is built with NestJs, Mongoose and MongoDB. Frontend is built with React and the whole app is written in Typescript. App is currently not deployed as it is currently a work in progress but is available to view on github.",
+        "A full stack note taking app with an own rolled user auth using jwt & bcrypt. Backend is built with NestJs, Mongoose and MongoDB. Frontend is built with React and the whole app is written in Typescript. App is currently not deployed as it is currently a work in progress but is available to view on github.",
       linkToProject: "https://github.com/mrideout1985/notes-app",
       page: "/notes",
     },
