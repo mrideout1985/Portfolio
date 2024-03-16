@@ -15,8 +15,8 @@ const projectList = [
     title: "South West Wales Amalgamated",
     type: "Freelance, work in progress",
     background: "/swwamal.png",
-    linkToProject:
-      "https://south-west-wales-amalgamated-4c8zuc775-mrideout1985.vercel.app",
+    linkToProject: "https://cwuswwales.org",
+    linkToGithubProject: "https://github.com/mrideout1985/swwamal",
     description: "A website for South West Wales Communications Union.",
   },
   {
@@ -27,6 +27,7 @@ const projectList = [
     description: "A movie database built with React and TMDB Api",
   },
 ];
+
 const Projects = () => {
   return (
     <section className={styles.container}>

@@ -7,6 +7,7 @@ const ProjectCard = ({
   background,
   linkToProject,
   description,
+  linkToGithub,
 }) => {
   return (
     <li className={styles.list}>
@@ -20,6 +21,11 @@ const ProjectCard = ({
           <div className={styles.link}>
             <a href={linkToProject}>Visit Project</a>
           </div>
+          {linkToGithub && (
+            <div className={styles.link}>
+              <a href={linkToProject}>Visit Project</a>
+            </div>
+          )}
         </div>
         <h4>{title}</h4>
         <h5>{type}</h5>
