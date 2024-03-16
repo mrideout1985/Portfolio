@@ -22,9 +22,10 @@
 
   .imageContainer {
     margin: 0 auto;
-
+    width: 50%;
     .image {
-      object-fit: cover;
+      object-fit: cover; /* Ensure the image covers the container */
+      width: 100%;
     }
   }
 

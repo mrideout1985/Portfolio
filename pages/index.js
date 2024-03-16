@@ -38,7 +38,7 @@ export default function Home() {
       <section className={styles.aboutContainer}>
         <h2>About Me</h2>
         <p>
-          Welcome to my portfolio! I'm a passionate and dedicated front-end
+          Welcome to my portfolio! I&aposm a passionate and dedicated front-end
           developer with over two years of experience in the software
           development industry. My journey in tech began with a spark of
           curiosity and has flourished into a career driven by a love for
@@ -63,8 +63,8 @@ export default function Home() {
           I thrive in agile environments, actively engaging in stand-ups, sprint
           refinements, and retrospectives. My ability to remain highly focused
           on tasks while being adaptable to context switches is a testament to
-          my versatile work style. I'm a hardworking individual who balances a
-          keen focus on detailed tasks with the agility to shift gears as
+          my versatile work style. I&aposm a hardworking individual who balances
+          a keen focus on detailed tasks with the agility to shift gears as
           project demands evolve.
         </p>
         <h3>Learning and Growth</h3>
@@ -74,7 +74,7 @@ export default function Home() {
           for ways in which I can expand my technical knowledge. I am looking to
           join a team of developers that will help me to grow as a developer.
           Everything I have learned so far has been self taught with some
-          mentoring from friends who work in the industry.Currently, I'm
+          mentoring from friends who work in the industry.Currently, I&aposnpm m
           deepening my understanding of web accessibility, driven by a belief
           that technology should be inclusive and accessible to all.
         </p>
